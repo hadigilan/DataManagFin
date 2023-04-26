@@ -1,3 +1,9 @@
 # important functions to import data into R
 
+#
 read.csv 
+
+
+# Importing data from Excel file
+library("readxl")
+read_excel
