@@ -1,1 +1,3 @@
+# important functions to import data into R
 
+read.csv 
