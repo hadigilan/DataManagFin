@@ -1,4 +1,11 @@
 # removing duplicate rows
 
 
+# converting from wide format to long format
+library(tidyr)
+export %>% pivot_longer( cols=paste("year", 1988:2020, sep=""), 
+                         names_to='year',  
+                         values_to='export share')
+                         
+                         
 # winsorizing
