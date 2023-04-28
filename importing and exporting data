@@ -6,6 +6,9 @@ data<- read.sas7bdat('path of your file/your file name.sas7bdat')
 
 
 # importing from a Stata file
+library(readstata13)
+data<- read.dta13("path of your file/your file name.dta")							# Compustat data for for all firms total asset		(1980-2023)			
+
 
 
 #
