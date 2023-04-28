@@ -1,4 +1,12 @@
-# important functions to import data into R
+# importing from a SAS
+library(sas7bdat)
+data<- read.sas7bdat('path of your file/your file name.sas7bdat')
+
+
+
+
+# importing from a Stata file
+
 
 #
 read.csv 
