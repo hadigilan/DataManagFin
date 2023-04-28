@@ -11,7 +11,10 @@ library(tidyr)
 export %>% pivot_longer( cols=paste("year", 1988:2020, sep=""), 
                          names_to='year',  
                          values_to='export share')
-                         
+
+
+# creating a column in a data.frame containing the maximum value of two specific columns
+data$maximum<- pmax(data$col1, data$col2)
                          
 # winsorizing
 
