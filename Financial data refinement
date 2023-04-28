@@ -1,6 +1,11 @@
 # removing duplicate rows
 
 
+# extracting some parts of a vector. 
+# For example, suppose you have 4-digit SIC codes and you want to create a vector containing 2-digit codes
+data$two.sic<- substr(data$four.digit, 1, 2)						
+
+
 # converting from wide format to long format
 library(tidyr)
 export %>% pivot_longer( cols=paste("year", 1988:2020, sep=""), 
