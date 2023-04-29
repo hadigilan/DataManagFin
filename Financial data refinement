@@ -1,6 +1,12 @@
 # removing duplicate rows
 
 
+# selecting a subset of a data.frame. 
+# For example, let you want to extract non-domestic segment data from a data.frame contaning all segment data.
+# (the code 2 and 3 in geotp is used for domestic and non-domestic segments, respectively)
+subset(segment, segment$geotp == 3)
+
+
 # extracting some parts of a vector. 
 # For example, suppose you have 4-digit SIC codes and you want to create a vector containing 2-digit codes
 data$two.sic<- substr(data$four.digit, 1, 2)						
