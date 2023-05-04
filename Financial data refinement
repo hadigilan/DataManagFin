@@ -2,7 +2,7 @@
 
 
 # selecting a subset of a data.frame. 
-# For example, let you want to extract non-domestic segment data from a data.frame contaning all segment data.
+# For example, let you want to extract non-domestic segment data from a data frame contaning all segment data.
 # (the code 2 and 3 in geotp is used for domestic and non-domestic segments, respectively)
 subset(segment, segment$geotp == 3)
 
