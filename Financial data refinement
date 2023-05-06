@@ -22,6 +22,10 @@ export %>% pivot_longer( cols=paste("year", 1988:2020, sep=""),
 # creating a column in a data.frame containing the maximum value of two specific columns
 data$maximum<- pmax(data$col1, data$col2)
 
+# converting SAS date format 
+# When you extract data from financial databases (like WRDS) in SAS file, the date's format is not in a common way (like dd-mm-yyyy).
+# In this case, you need to convert date format.
+
 
 # removing missing values
 
