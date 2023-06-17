@@ -24,13 +24,18 @@ data$maximum<- pmax(data$col1, data$col2)
 
 # converting SAS date format 
 # When you extract data from financial databases (like WRDS) in SAS file, the date's format is not in a common way (like dd-mm-yyyy).
-# In this case, you need to convert date format.
+# In this case, you may want to convert date format.
 
 
 # removing missing values
+# The common way to remove missing values from your data set is na.omit function. This function totaly removes rows with at least one missing value. 
+na.omit(your data set's name)
+
 
 
 # replacing missing values
+
+# standardizing
 
 # winsorizing
 
